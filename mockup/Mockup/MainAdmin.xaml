@@ -1,0 +1,31 @@
+﻿<Window x:Class="Mockup.MainAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mockup"
+        mc:Ignorable="d"
+        Title="Admin" Height="300" Width="300">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" MinWidth="100"/>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="5" Text="user: "/>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="5" />
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="5" Text="password: "/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="5" />
+        <Button Grid.Row="2" Grid.Column="0" Margin="5" Content="Logga in" Click="Login_Clicked"/>
+        <Button Grid.Row="2" Grid.Column="1" Margin="5" Content="Cancel"/>
+
+    </Grid>
+</Window>
